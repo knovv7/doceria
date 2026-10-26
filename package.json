@@ -1,0 +1,13 @@
+{
+  "name": "doce-e-cia",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Doce & Cia — confeitaria artesanal, montador 3D e encomendas",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "check": "node --check app.js && node --check data.js && node --check builder.js && node --check ordering.js && node --check motion.js && node --check cake-3d.mjs && node --check server.mjs && node --check scripts/build.mjs",
+    "build": "npm run check && node scripts/build.mjs"
+  }
+}
